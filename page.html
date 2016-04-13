@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>page.js</title>
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+       
+        <style type="text/css">
+            #page{
+                margin:50px 0 0 100px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="page"></div>
+    </body>
+    <script src="http://libs.baidu.com/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./page.js"></script>
+    <script type="text/javascript">
+        $("#page").createPage({
+            pageCount:10,
+            current:1,
+            backFn:function(p){
+                alert(p);
+            }
+        });
+    </script>
+</html>
